@@ -70,7 +70,7 @@
                         <use xlink:href="img/sprite1.svg#icon-book">
                     </svg>
                     <span class="main__text">Repositories</span>
-                     <span class="repository__count">6</span>
+                     <span class="repository__count">7</span>
                 </a>
                 </li>
                 <li class="main__list"><a href="#" class="main__list-link">
@@ -158,7 +158,80 @@
 
 
             <div class="repository__page">
-                
+                <div class="form__section">
+
+                <form action="#" class="form">
+                    <input type="text" placeholder="Find a repository..." class="find__repository repo">
+                    <select class="repository__select repo" value="Type:" aria-label="Select type" aria-placeholder="Type:">
+                        <optgroup label="Select type">
+                            <option value="html">All</option>
+                            <option value="css">Public</option>
+                            <option value="css">Private</option>
+                            <option value="css">Sources</option>
+                            <option value="css">Forks</option>
+                            <option value="css">Archived</option>
+                            <option value="css">Mirrors</option>
+                          </optgroup>
+                    </select>
+                    <select class="repository__select repo" value="Type:" aria-label="Select language" aria-placeholder="Language:">
+                        <optgroup label="Select language">
+                            <option value="html">All</option>
+                            <option value="css">HTML</option>
+                            <option value="css">Javascript</option>
+                            <option value="css">CSS</option>
+                            <option value="css">Vue</option>
+                          </optgroup>
+                    </select>
+                    <button class="new__button repo">
+                        <svg class="main__list-icon new__icon">
+                            <use xlink:href="img/sprite1.svg#icon-book">
+                        </svg>
+                        <span class="new__text">New</span>
+                        
+                    </button>
+                </form>
+                </div>
+
+                <div class="repository__list">
+                    <div class="repository__list-top">
+                        <h2 class="repository__list-title">
+                            github-copy
+                        </h2>
+                        <button class="repository__list-btn">
+                            <svg class="profile__icon">
+                                <use xlink:href="img/sprite2.svg#icon-star_outline">
+                            </svg>
+                            <span class="repository__list-btn--text">Star</span>
+                        </button>
+                    </div>
+                    <div class="repository__list-average">
+                        <div class="summary">Github repository page design</div>
+                    </div>
+                    
+                    <div class="repository__list-bottom">
+                        <div class="program__used">
+                            <div class="color"></div>
+                        <div class="text">Javascript</div>
+                        </div>
+                        <div class="star__number">
+                            <svg class="profile__icon">
+                                <use xlink:href="img/sprite2.svg#icon-star_outline">
+                            </svg>
+                            <span class="repository__list-btn--text">4</span>
+                        </div>
+                        <div class="fork__number">
+                            <svg class="profile__icon">
+                                <use xlink:href="img/sprite2.svg#icon-star_outline">
+                            </svg>
+                            <span class="repository__list-btn--text">4</span>
+                        </div>
+                        <div class="date__updated">Updated 5 hours ago</div>
+                        
+
+
+                    </div>
+                    
+                </div>
             </div>
             
         </section>

@@ -1,5 +1,6 @@
 :root {
     --color-text-primary: #24292E;
+    --color-grey-light: #EAECEF;
 }
 
 *,
@@ -24,9 +25,10 @@ body {
 }
 
 .header {
-    height: 5.8rem;
+    height: 5.5rem;
     background-color: var(--color-text-primary);
-    line-height: 5rem;
+    line-height: 5.5rem;
+    font-size: 1.2rem;
     
 }
 .top__container {
@@ -45,15 +47,16 @@ body {
     background-color: transparent;
     border: 1px solid #444D56;
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: .4rem 1rem;
     margin-right: -3rem;
     color: #fff;
     transition: all .3s;
-    width: 27rem;
-    font-size: 1.2rem;
+    width: 25rem;
+    font-family: inherit;
+    font-size: 1.3rem;
 }
 .top__search::-webkit-input-placeholder {
-    color: #949ca3;
+    color: #c0c4c7;
 }
 .top__search:focus {
     outline: none;
@@ -74,6 +77,7 @@ body {
     list-style: none;
     display: flex;
     margin-right: auto;
+    padding-left: 3rem;
 }
 .list:not(:last-of-type) {
     margin-right: 1.5rem;
@@ -83,9 +87,9 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
-.list__link:not(:last-of-type) {
+/* .list__link:not(:last-of-type) {
     margin-right: 1rem;
-}
+} */
 .icon__box {
     display: flex;
     align-items: center;
@@ -130,7 +134,7 @@ body {
 ** Main
 ***/
 .top__main {
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid var(--color-grey-light);
     padding-bottom: 2px;
     display: flex;
     flex-direction: row;
@@ -356,10 +360,58 @@ margin-top: 2rem;
 }
 .repository__page {
     flex: 1;
-    background-color: burlywood;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
-
-
-
+.form__section {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-grey-light);
+   
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.find__repository {
+    flex: 1;
+}
+.find__repository::-webkit-input-placeholder {
+    color: #606972;
+}
+.find__repository:focus {
+    border: 1px solid #0366d6;
+    box-shadow: 0 0 5px #0365d68e;
+    outline: none;
+}
+.repo {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--color-grey-light);
+    font-size: 1.3rem;
+    font-family: inherit;
+}
+.repository__select {
+    margin-left: 1rem;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    transition: all .2s;
+}
+.repository__select:hover {
+    background-color: rgb(241, 241, 241);
+}
+.new__button {
+    margin-left: 2rem;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #37ad59;
+    border: 1px solid #31a552;
+}
+.new__icon {
+    fill: currentColor;
+}
+.new__text {
+    margin-left: 1rem;
+}
 
