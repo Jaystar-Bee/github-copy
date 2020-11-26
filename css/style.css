@@ -109,7 +109,16 @@ body {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background-color: #fff;
+    background-image : url(../img/SpiderMan-Post-Malone-Swae-Lee.png);
+    background-size: cover;
+    overflow: hidden;
+    background-position: top;
+    
+}
+.top__image {
+    width: 100%;
+    height: 100%;
+    
 }
 .logo:hover, .list__link:hover, .top__icon:hover {
     color: #BDBFC0;
@@ -188,16 +197,70 @@ body {
 }
 .section__profile {
     display: flex;
-    width: 100%;
-    margin: 0 5.5rem;
+    width: 92%;
+    justify-content: center;
+    margin-left: 5.5rem;
 
 }
 .profile__bar {
-    flex: 0 0 21%;
+    flex: 0 0 22%;
 }
 .profile__bar-details {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.smiley {
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    z-index: 20;
+    height: 3.5rem;
+    width: 3.5rem;
+   background-color: #fff;
+   padding: .3rem;
+   border-radius: 50%;
+   border: 1px solid #ddd;
+}
+.smiley:hover  {
+    width: 8rem;
+    border-radius: 5rem;
+
+}
+.smiley:hover .status {
+    display: inline-block;
+}
+.smiley__link {
+    color:  rgb(117, 117, 117);
+   fill: rgb(117, 117, 117);
+   text-decoration: none;
+   position: absolute;
+   position: absolute;
+    top: .8rem;
+    right: .9rem;
+    z-index: 10;
+    display: flex;
+}
+.smiley__link:hover {
+    color: #0366D6;
+    fill: #0366D6;
+}
+.smiley__icon {
+    
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    fill: currentColor;
+}
+
+.status {
+    display: none;
+    color: currentColor;
+    font-size: 1.1rem;
+    display: none;
+    cursor: pointer;
+    margin-left: .3rem;
 }
 .profile__bar-picture--cover {
     background-color: chartreuse;
@@ -205,9 +268,12 @@ body {
     height: 25rem;
     border-radius: 50%;
     margin-top: -3rem;
+    position: relative;
+    overflow: hidden;
 }
 .profile__bar-picture {
-
+    width: 100%;
+    height: 100%;
 }
 .name {
     margin: 2.25rem 0 ;
@@ -235,7 +301,7 @@ body {
     border-radius: .5rem;
 }
 .btn__profile:hover {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(240, 240, 240);
 }
 .profile__bar-items {
     display: flex;
@@ -291,4 +357,9 @@ margin-top: 2rem;
 .repository__page {
     flex: 1;
     background-color: burlywood;
+    margin-left: 2rem;
 }
+
+
+
+
