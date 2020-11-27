@@ -19,14 +19,11 @@
         height: 24rem;
     }
     .top__search:focus {
-        width: 30rem;
+        width: 35rem;
     }
 }
 @media only screen and (max-width:63.2em) {
 
-    html {
-        font-size: 60%;
-    }
     .profile__bar-picture--cover {
         height: 22rem;
     }
@@ -39,6 +36,12 @@
     .top__main {
         padding-left: 5rem;
     }
+    .copyright__logo {
+        display: none;
+    }
+    .copyright__text {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width:56.87em) {
@@ -49,7 +52,7 @@
         margin-right: 1.5rem;
     }
     .top__main {
-        padding-left: 20rem;
+        padding-left: 30rem;
     }
 }
 
@@ -57,7 +60,13 @@
     .profile__bar-picture--cover {
         height: 20rem;
     }
-    .
+    .profile__bar-items {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .smiley {
+        top: 13rem;
+    }
 }
 @media only screen and (max-width:53em) {
     .profile__bar-picture--cover {
@@ -65,6 +74,9 @@
     }
     .copyright__text {
         margin-left: 2rem;
+    }
+    .smiley {
+        top: 11rem;
     }
     .fullscreen {
         display: none;

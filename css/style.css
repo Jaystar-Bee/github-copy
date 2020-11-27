@@ -336,12 +336,13 @@ body {
 .profile__bar-items {
     display: flex;
     align-items: center;
+    padding-bottom: 3rem;
     border-bottom: 1px solid #ccc;
 }
 .follow {
     display: flex;
     align-items: center;
-    margin-bottom: 3rem;
+
     cursor: pointer;
     transition: all .1s;   
 }
