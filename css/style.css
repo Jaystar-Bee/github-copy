@@ -241,7 +241,7 @@ body {
 
 .smiley {
     position: absolute;
-    top: 16rem;
+    top: 18rem;
     right: 1rem;
     z-index: 20;
     height: 3.5rem;
@@ -293,9 +293,10 @@ body {
 .profile__bar-picture--cover {
     background-color: chartreuse;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     border-radius: 50%;
     margin-top: -3rem;
+    /* background-image: url(../img/SpiderMan-Post-Malone-Swae-Lee.png); */
     position: relative;
     overflow: hidden;
     z-index: 10;
@@ -541,6 +542,7 @@ FOOTER
 }
 .copyright__text {
     margin-left: 3rem;
+    display: flex;
 }
 .footer__list-cover {
     list-style: none;
@@ -548,11 +550,12 @@ FOOTER
     justify-content: center;
 }
 .footer__list {
-    
+    display: flex;
 }
 .footer__list-link {
     text-decoration: none;
     color: #0366D6;
+    display: block;
     
 }
 .footer__list-link:not(:last-of-type) {

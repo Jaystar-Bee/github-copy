@@ -1,0 +1,81 @@
+
+@media only screen and (max-width:83em) {
+    .profile__bar-picture--cover {
+        height: 26rem;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer__list-link:not(:last-of-type) {
+        margin-right: 3rem;
+    }
+    .smiley {
+        top: 16rem;
+    }
+}
+
+@media only screen and (max-width:71.9em) {
+    .profile__bar-picture--cover {
+        height: 24rem;
+    }
+    .top__search:focus {
+        width: 30rem;
+    }
+}
+@media only screen and (max-width:63.2em) {
+
+    html {
+        font-size: 60%;
+    }
+    .profile__bar-picture--cover {
+        height: 22rem;
+    }
+    .footer__list-link:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+    .smiley {
+        top: 14rem;
+    }
+    .top__main {
+        padding-left: 5rem;
+    }
+}
+
+@media only screen and (max-width:56.87em) {
+    .profile__bar-picture--cover {
+        height: 22rem;
+    }
+    .footer__list-link:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+    .top__main {
+        padding-left: 20rem;
+    }
+}
+
+@media only screen and (max-width:55.7em) {
+    .profile__bar-picture--cover {
+        height: 20rem;
+    }
+    .
+}
+@media only screen and (max-width:53em) {
+    .profile__bar-picture--cover {
+        height: 18rem;
+    }
+    .copyright__text {
+        margin-left: 2rem;
+    }
+    .fullscreen {
+        display: none;
+    }
+    .smallscreen {
+        display: block;
+    }
+    .top__search {
+        width: 20rem;
+    }
+    .top__search:focus {
+        width: 25rem;
+    }
+}
