@@ -1,6 +1,7 @@
 :root {
     --color-text-primary: #24292E;
     --color-grey-light: #EAECEF;
+    --color-grey-dark: #24292E;
 }
 
 *,
@@ -77,7 +78,10 @@ body {
     list-style: none;
     display: flex;
     margin-right: auto;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
+}
+.smallscreen {
+    display: none;
 }
 .list:not(:last-of-type) {
     margin-right: 1.5rem;
@@ -119,6 +123,7 @@ body {
     background-position: top;
     
 }
+
 .top__image {
     width: 100%;
     height: 100%;
@@ -128,6 +133,14 @@ body {
     color: #BDBFC0;
     fill:  #BDBFC0;
     cursor: pointer;
+}
+.repository {
+    margin-left: 1.5rem;
+}
+.repository:hover {
+    fill:  #BDBFC0;
+    color: #BDBFC0;
+    
 }
 
 /******************************
@@ -139,16 +152,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 10;
 }
 .main__list-cover {
     display: flex;
     justify-content: center; 
     align-items: flex-end;
-
 }
 .main__list {
     list-style: none;
     justify-self: stretch;
+    
 }
 .main__list-link {
     text-decoration: none;
@@ -158,6 +176,9 @@ body {
     color: var(--color-text-primary);
     box-sizing: content-box;
     -webkit-backface-visibility: hidden;
+    color: var(--color-grey-dark);
+
+
 
 }
 .main__list-link:hover{
@@ -168,7 +189,7 @@ body {
 .main__list-icon {
     height: 1.5rem;
     width: 1.5rem;
-    fill: #aaa;
+    fill: currentColor;
 }
 .main__text {
     margin-left: 1rem;
@@ -179,6 +200,7 @@ body {
 }
 .main__repository {
     border-bottom: 2px solid red;
+    font-weight: 500;
     margin-bottom: -2px;
     color: black;
     display: flex;
@@ -204,6 +226,8 @@ body {
     width: 92%;
     justify-content: center;
     margin-left: 5.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--color-grey-light);
 
 }
 .profile__bar {
@@ -243,7 +267,7 @@ body {
    position: absolute;
     top: .8rem;
     right: .9rem;
-    z-index: 10;
+    z-index: 30;
     display: flex;
 }
 .smiley__link:hover {
@@ -274,6 +298,7 @@ body {
     margin-top: -3rem;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 }
 .profile__bar-picture {
     width: 100%;
@@ -324,8 +349,8 @@ body {
     fill: #0366D6;
 }
 .profile__icon {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
     fill: currentColor;
     margin-right: .3rem;
 }
@@ -350,6 +375,10 @@ margin-top: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
 
+}
+.pro__cover {
+    display: flex;
+    align-items: center;
 }
 .pro {
     text-transform: uppercase;
@@ -396,6 +425,9 @@ margin-top: 2rem;
     cursor: pointer;
     transition: all .2s;
 }
+.repository__select:focus {
+    outline: none;
+}
 .repository__select:hover {
     background-color: rgb(241, 241, 241);
 }
@@ -407,6 +439,11 @@ margin-top: 2rem;
     padding: 0 1rem;
     background-color: #37ad59;
     border: 1px solid #31a552;
+    cursor: pointer;
+    transition: all .2s;
+}
+.new__button:hover {
+    background-color: #2e964b;
 }
 .new__icon {
     fill: currentColor;
@@ -415,27 +452,112 @@ margin-top: 2rem;
     margin-left: 1rem;
 }
 .repository__list {
-
+    margin-top: 3rem;
+    color: #606972;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-grey-light);
 }
 .repository__list-top {
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .2rem;
 }
 .repository__list-title {
-
+    color:  #0366D6;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 .repository__list-btn {
-
+    padding: .4rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(249, 255, 250);
+    transition: all .2s;
 }
 .repository__list-btn--text {
-
+    font-size: 1.2rem;
+}
+.repository__list-btn:hover {
+    background-color: rgb(243, 243, 243);
 }
 
 .repository__list-average {
-
+    margin-bottom: 1.5rem;
 }
 .summary {
-
+    font-size: 1.3rem;
+    
 }
 .repository__list-bottom {
+    display: flex;
+    font-size: 1.1rem;
+    align-items: center;
+}
+.program__used {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+.color {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-right: .5rem;
+}
+.star__number, .fork__number {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+.project__icon {
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.date__updated {
+
+}
+/***
+FOOTER
+**/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 2rem 5.5rem;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+}
+.copyright__logo {
+    height: 2rem;
+    width: 2rem;
+}
+.copyright__text {
+    margin-left: 3rem;
+}
+.footer__list-cover {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer__list {
     
+}
+.footer__list-link {
+    text-decoration: none;
+    color: #0366D6;
+    
+}
+.footer__list-link:not(:last-of-type) {
+    margin-right: 4rem;
+}
+.footer__list-link:hover {
+    text-decoration: underline;
 }

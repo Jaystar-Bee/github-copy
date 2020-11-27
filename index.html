@@ -19,7 +19,8 @@
             
 
             <ul class="heading__list">
-                <li class="list"><a href="#" class="list__link">Pull requests</a></li>
+                <li class="list"><a href="#" class="list__link"><span class="fullscreen">Pull requests</span>
+                <span class="smallscreen">Pulls</span></a></li>
                 <li class="list"><a href="#" class="list__link">Issues</a></li>
                 <li class="list"><a href="#" class="list__link">Marketplace</a></li>
                 <li class="list"><a href="#" class="list__link">Explore</a></li>
@@ -31,14 +32,14 @@
                 </svg>
                 </div>
 
-                <div class="repository">
+                <a href="#" class="repository">
                 <svg class="top__icon plus">
                     <use xlink:href="img/sprite.svg#icon-plus1" class="bell">
                 </svg>
                 <svg class="top__icon arrow__down">
                     <use xlink:href="img/sprite.svg#icon-sort-desc">
                 </svg>
-                </div>
+                </a>
                 <!--Insert Image-->
                 <div class="profile__small">
                     <div class="profile">
@@ -69,7 +70,7 @@
                     <svg class="main__list-icon">
                         <use xlink:href="img/sprite1.svg#icon-book">
                     </svg>
-                    <span class="main__text">Repositories</span>
+                    <span class="main__text main__repository-text">Repositories</span>
                      <span class="repository__count">7</span>
                 </a>
                 </li>
@@ -148,10 +149,12 @@
                         Highlights
 
                     </div>
+                    <div class="pro__cover">
                     <svg class="profile__icon">
                         <use xlink:href="img/sprite2.svg#icon-star_outline">
                     </svg>
                     <span class="pro">pro</span>
+                    </div>
                 </div>
 
             </div>
@@ -194,11 +197,11 @@
 
                 <div class="repository__list">
                     <div class="repository__list-top">
-                        <h2 class="repository__list-title">
+                        <h6 class="repository__list-title">
                             github-copy
-                        </h2>
+                        </h6>
                         <button class="repository__list-btn">
-                            <svg class="profile__icon">
+                            <svg class="profile__icon ">
                                 <use xlink:href="img/sprite2.svg#icon-star_outline">
                             </svg>
                             <span class="repository__list-btn--text">Star</span>
@@ -211,19 +214,19 @@
                     <div class="repository__list-bottom">
                         <div class="program__used">
                             <div class="color"></div>
-                        <div class="text">Javascript</div>
+                        <div class="text">JavaScript</div>
                         </div>
                         <div class="star__number">
-                            <svg class="profile__icon">
+                            <svg class="profile__icon project__icon">
                                 <use xlink:href="img/sprite2.svg#icon-star_outline">
                             </svg>
-                            <span class="repository__list-btn--text">4</span>
+                            <span class="star__text">4</span>
                         </div>
                         <div class="fork__number">
-                            <svg class="profile__icon">
+                            <svg class="profile__icon project__icon">
                                 <use xlink:href="img/sprite2.svg#icon-star_outline">
                             </svg>
-                            <span class="repository__list-btn--text">4</span>
+                            <span class="fork__text">4</span>
                         </div>
                         <div class="date__updated">Updated 5 hours ago</div>
                         
@@ -236,6 +239,31 @@
             
         </section>
     </main>
-    <div style="height: 300px;"></div>
+    <footer class="footer">
+        <div class="copyright">
+            <img src="img/GitHub-Mark-120px-plus.png" alt="" class="copyright__logo">
+            <div class="copyright__text">
+                &copy; 2020 GitHub, Inc.
+            </div>
+        </div>
+
+            <ul class="footer__list-cover">
+                <li class="footer__list">
+                    <a href="#" class="footer__list-link">Terms</a>
+                    <a href="#" class="footer__list-link">Privacy</a>
+                    <a href="#" class="footer__list-link">Security</a>
+                    <a href="#" class="footer__list-link">Status</a>
+                    <a href="#" class="footer__list-link">Help</a>
+                    <a href="#" class="footer__list-link">Contact GitHub</a>
+                    <a href="#" class="footer__list-link">Pricing</a>
+                    <a href="#" class="footer__list-link">API</a>
+                    <a href="#" class="footer__list-link">Training</a>
+                    <a href="#" class="footer__list-link">Blog</a>
+                    <a href="#" class="footer__list-link">About</a>
+                </li>
+            </ul>
+
+        
+    </footer>
 </body>
 </html>
