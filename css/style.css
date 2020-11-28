@@ -417,6 +417,9 @@ margin-top: 2rem;
     justify-content: space-between;
    
 }
+.select {
+    display: flex;
+}
 .find__repository {
     flex: 1;
 }

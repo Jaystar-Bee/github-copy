@@ -75,6 +75,9 @@
         width: 100%;
         flex-wrap: wrap;
     }
+    .smiley {
+        top: 13rem;
+    }
 }
 
 @media only screen and (max-width:55.7em) {
@@ -86,7 +89,7 @@
         flex-wrap: wrap;
     } */
     .smiley {
-        top: 13rem;
+        top: 12rem;
     }
 }
 @media only screen and (max-width:53em) {
@@ -200,6 +203,9 @@ MOBILE DISPLAY
         display: none;
         background-color: var(--color-text-primary);
     }
+    .show {
+        display: block;
+    }
     .navigation__search {
         width: 100%;
         background-color: transparent;
@@ -212,6 +218,11 @@ MOBILE DISPLAY
         font-family: inherit;
         font-size: 1.3rem;
         margin-bottom: 2rem;
+    }
+    .navigation__search:focus {
+        outline: none;
+        background-color: #4B4F53;
+        border: 1px solid #0366D6;
     }
     .navigation__search::-webkit-input-placeholder {
         color: #ccc;
