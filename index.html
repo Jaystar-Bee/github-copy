@@ -11,6 +11,21 @@
 </head>
 <body>
     <header class="header">
+        <div class=" container mobile__navbar">
+                
+            <div  class="navbar__button">
+                <span class="navbar__line"></span>
+                <span class="navbar__line line__2"></span>
+                <span class="navbar__line line__3"></span>
+            </div>
+            
+            
+            <img src="img/GitHub-Mark-Light-120px-plus.png" alt="" class="logo">
+            <svg class="top__icon bell">
+                <use xlink:href="img/sprite.svg#icon-bell-o">
+            </svg>
+        </div>
+        
         <div class="container top__container">
             <img src="img/GitHub-Mark-Light-120px-plus.png" alt="" class="logo">
             <form action="#" class="top__form">
@@ -56,8 +71,81 @@
             </div>
         </div>
     </header>
+    <nav class="navigation">
+        <input type="text" class="navigation__search" placeholder="Search">
+        <ul class="navigation__list-cover">
+            <li class="navigation__list"><a href="#" class="navigation__link">Dashboard</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link">Pull requests</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link">Issues</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link">Marketplace</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link">Explore</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link">Settings</a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link navigation__profile"> <div class="profile">
+                <!-- <img src="img/SpiderMan-Post-Malone-Swae-Lee.png" alt="." class="top__image"> -->
+            </div>
+            <span class="navigation__username">Jaystar-Bee</span></a></li>
+            <li class="navigation__list"><a href="#" class="navigation__link navigation__signout">
+                <svg class="mobile__smiley__icon">
+                    <use xlink:href="img/sprite4.svg#icon-log-out">
+                        
+                </svg>
+                <span class="navigation__username">Sign Out</span></a></li>
+        </ul>
+    </nav>
 
     <main class="main">
+        <section class="mobile__profile">
+            <div class="mobile__profile__details">
+            <div class="profile__bar-picture--cover">
+                <img src="img/SpiderMan-Post-Malone-Swae-Lee.png" alt="Profile pic" class="profile__bar-picture">
+
+            </div>
+            
+            <div class="username">
+                <h1 class="name">I'm Jaystar</h1>
+                Jaystar-Bee
+            </div>
+            </div>
+            <div class="mobile__smiley">
+                <a href="#" class="mobile__smiley__link">
+                    <svg class="mobile__smiley__icon">
+                        <use xlink:href="img/sprite3.svg#icon-smile">
+                            
+                    </svg>
+                    <span class="mobile__status">Set status</span>
+                </a>
+                
+            </div>
+            
+             
+            <button class="mobile__btn__profile mobile-padding">Edit profile</button>
+                <div class="profile__bar-items">
+                    <div class="follow">
+                        <svg class="profile__icon">
+                            <use xlink:href="img/sprite2.svg#icon-users">
+                        </svg>
+                        <span class="follow__number">1</span>
+                        <span class="follow__text">
+                            follower .
+                        </span>
+                    </div>
+                    <div class="follow">
+                        <span class="follow__number">2</span>
+                        <span class="follow__text">
+                            following .
+                        </span>
+                    </div>
+                    <div class="follow">
+                        <svg class="profile__icon">
+                            <use xlink:href="img/sprite2.svg#icon-star_outline">
+                        </svg>
+                        <span class="follow__number">5</span>
+                        
+                    </div>
+                    
+
+                </div>
+        </section>
         <section class="top__main">
             <ul class="main__list-cover">
                 <li class="main__list"><a href="#" class="main__list-link">
@@ -166,6 +254,9 @@
 
                 <form action="#" class="form">
                     <input type="text" placeholder="Find a repository..." class="find__repository repo">
+                    <div class="select">
+
+                    
                     <select class="repository__select repo" value="Type:" aria-label="Select type" aria-placeholder="Type:">
                         <optgroup label="Select type">
                             <option value="html">All</option>
@@ -177,7 +268,7 @@
                             <option value="css">Mirrors</option>
                           </optgroup>
                     </select>
-                    <select class="repository__select repo" value="Type:" aria-label="Select language" aria-placeholder="Language:">
+                    <select class="repository__select repo language" value="Type:" aria-label="Select language" aria-placeholder="Language:">
                         <optgroup label="Select language">
                             <option value="html">All</option>
                             <option value="css">HTML</option>
@@ -193,6 +284,7 @@
                         <span class="new__text">New</span>
                         
                     </button>
+                </div>
                 </form>
                 </div>
 
@@ -225,7 +317,7 @@
                         </div>
                         <div class="fork__number">
                             <svg class="profile__icon project__icon">
-                                <use xlink:href="img/sprite2.svg#icon-star_outline">
+                                <use xlink:href="img/sprite4.svg#icon-code-fork">
                             </svg>
                             <span class="fork__text">4</span>
                         </div>
@@ -266,5 +358,7 @@
 
         
     </footer>
+
+    <script type="javascript" src="javascript/index.js"></script>
 </body>
 </html>
