@@ -1,0 +1,32 @@
+{
+  "name": "buycoinwork",
+  "version": "1.0.0",
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jaystar-Bee/github-copy.git"
+  },
+  "author": "Ayilara Boluwatife John",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html",
+    "buildwebpack": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --env development "
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "parcel": "^2.0.0-beta.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}

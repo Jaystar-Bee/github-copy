@@ -112,8 +112,10 @@ body {
 .top__icon {
     height: 1rem;
     width: 1rem;
-    fill: #fff;
+    fill: #fff !important;
+    color: #fff !important; 
     cursor: pointer;
+    /* background-color: #fff; */
 }
 .bell {
     height: 1.2rem;
@@ -524,7 +526,7 @@ margin-top: 2rem;
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-right: .5rem;
 }
 .star__number, .fork__number {
@@ -537,9 +539,7 @@ margin-top: 2rem;
     width: 1.4rem;
 }
 
-.date__updated {
 
-}
 /***
 FOOTER
 **/

@@ -309,13 +309,13 @@ MOBILE DISPLAY
     .name {
         margin-bottom: 1rem;
     }
-    .btn__profile {
+    /* .btn__profile {
         margin: 0 2rem;
         margin-bottom: 2rem;
         
-    }
+    } */
     .mobile__btn__profile {
-        margin: 0 2rem;
+        margin-left:2rem;
         margin-bottom: 2rem;
         padding: .6rem;
         border: 1px solid #bbb;
@@ -326,7 +326,7 @@ MOBILE DISPLAY
         font-size: 1.2rem;
         font-weight: 600;
         border-radius: .5rem;
-        width: 94%;
+        width: 93%;
         
     }
     .mobile__btn__profile:hover {
@@ -429,6 +429,9 @@ MOBILE DISPLAY
     .main__list-icon {
         display: none;
     }
+    .new__icon {
+        display: inline-block;
+    }
     .main__list-link {
         padding: 3rem .2rem 1.1rem .2rem; 
     }
@@ -439,7 +442,7 @@ MOBILE DISPLAY
 @media only screen and (max-width:33em) { 
 
     .mobile__btn__profile {
-        width: 89%;
+        width: 90%;
     }
     .name {
         font-size: 1.6rem;
@@ -450,7 +453,7 @@ MOBILE DISPLAY
 }
 @media only screen and (max-width:27em) {
     .mobile__btn__profile {
-        width: 86%;
+        width: 89%;
     }
     .main__list-link {
         padding: 3rem 0 1.1rem 0; 
